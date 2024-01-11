@@ -31,13 +31,13 @@ header{
     display: flex;
     justify-content: space-between;
     height: 79px;
+    margin: 0;
 }
 
 .logo{
     height: 19px;
     position: relative;
     top: 30px;
-    left: 50px;
 }
 
 nav ul{
@@ -46,7 +46,6 @@ nav ul{
     align-items: flex-end;
     width: 244px;
     height: 35px;
-    padding: 0 50px;
     margin: 0;
 }
 
@@ -62,6 +61,52 @@ nav ul li:hover{
     color: #0065FC;
 }
 /***** fin du header *****/
+
+
+/***** searchbar *****/
+form{
+    margin-top: 24px;
+}
+
+.fa-location-dot{
+    color: black;
+    padding: 15px 18px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    border: 1px solid #F2F2F2;
+}
+
+#search{
+    border: none;
+    text-align: center;
+    width: 195px;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+button{
+    color: white;
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0 15px 15px 0;
+    height: 49px;
+    width: 132px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.fa-magnifying-glass{
+    color: white;
+    background-color: #0065FC;
+    padding: 15px 16px;
+    border-radius: 15px;
+    border: 1px solid #0065FC;
+    box-shadow: 0 4px 4px #00000025;
+    visibility: hidden;
+}
+/***** fin de la searchbar *****/
 
 
 a {
