@@ -49,23 +49,16 @@ nav ul{
     margin: 0;
 }
 
-nav ul li{
-    font-size: 16px;
-    list-style: none;
-    height: 19px;
-}
-
 nav ul li:hover{
     border-top: #0065FC solid 2px;
     padding-top: 16px;
     color: #0065FC;
 }
-/***** fin du header *****/
 
 
 /***** searchbar *****/
 form{
-    margin-top: 24px;
+    margin: 35px 0;
 }
 
 .fa-location-dot{
@@ -83,7 +76,8 @@ form{
     padding: 0;
     margin: 0;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: bold;
+    height: 49px;
 }
 
 button{
@@ -94,7 +88,7 @@ button{
     height: 49px;
     width: 132px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .fa-magnifying-glass{
@@ -106,7 +100,51 @@ button{
     box-shadow: 0 4px 4px #00000025;
     visibility: hidden;
 }
-/***** fin de la searchbar *****/
+
+
+/***** filter *****/
+.filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 758px;
+    height: 50px;
+    padding: 16px 0;
+    font-weight: bold;
+}
+
+.filter-title{
+    font-size: 18px;
+}
+
+.fa-money-bill-wave, .fa-person, .fa-heart, .fa-fire{
+    margin-right: 10px;
+}
+
+.category{
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    padding: 14px 19px 14px 19px;
+    font-size: 17px;
+}
+
+.info{
+    margin: 35px 0;
+}
+
+.fa-info{
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    padding: 11px 10px;
+}
+/***** fin du filter *****/
+
+
+li{
+    list-style: none;
+}
 
 
 a {
