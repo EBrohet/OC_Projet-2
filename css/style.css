@@ -263,10 +263,6 @@ a {
     margin: 8px 0;
 }
 
-.hebergements-cards .card-rating{
-    margin: 0;
-}
-
 
 
 /****** Populaires ***********/
@@ -350,6 +346,27 @@ a {
     width: 25%;
 }
 
+
+/***** footer *****/
+footer{
+    background-color: #F2F2F2;
+    display: flex;
+}
+
+.list-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer ul{
+    padding: 20px;
+    width: 33%;
+    margin: 0;
+}
+
+.link{
+    padding-top: 15px;
+}
 
 
 
