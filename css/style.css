@@ -73,7 +73,7 @@ form{
 
 .fa-location-dot{
     color: black;
-    padding: 23px 16px 23px 18px;
+    padding: 23px 16px 23px 17px;
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
     border: 1px solid #F2F2F2;
@@ -148,7 +148,7 @@ button{
 .category{
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    padding: 13px 17px 13px 17px;
+    padding: 13px 17px;
     font-size: 17px;
 }
 
@@ -337,6 +337,8 @@ a {
 .activites-cards .card{
     padding: 0;
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .activites-cards img{
@@ -347,12 +349,18 @@ a {
 
 .activites-cards .card-title{
     padding: 0 19px 0px 19px;
-    margin: 16px 0 20px 0;
 }
 
 .activites-cards a{
     width: 25%;
     margin-top: 30px;
+}
+
+.activites-cards .card-content{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    min-height: 59px;
 }
 
 
@@ -397,7 +405,7 @@ footer ul{
 
     .category{
         font-size: 16px;
-        padding: 13.5px 17px 13.5px 17px;
+        padding: 13.5px 17px;
     }
     
 
@@ -446,8 +454,8 @@ footer ul{
         height: 200px;
     }
 
-    .activites-cards .card-title{
-        margin: 12px 0 16px 0;
+    .activites-cards .card-content{
+        min-height: 70px;
     }
 
 }
@@ -459,6 +467,7 @@ footer ul{
     /* ... */
     .main-container {
         padding: 0;
+        margin: 0;
     }
     
     .headline{
@@ -497,18 +506,23 @@ footer ul{
         padding-top: 0;
     }
 
+
+    form{
+        display: flex;
+    }
+
+    .fa-location-dot{
+        top : 0;
+    }
     
     #search{
-        padding-left: 24px;
-        position: absolute;
-        right: 54px;
-        left: 71px;
-        width: auto;
+        flex-grow: 1;
+        left: 0;
+        margin-right: 20px;
     }
     
     button{
-        visibility: hidden;
-        z-index: 2;
+        display: none;
     }
     
     .fa-magnifying-glass{
@@ -531,7 +545,7 @@ footer ul{
         margin-bottom: 10px;
         flex-basis: 25%;
         flex-grow: 1;
-        padding: 15px 17px 15px 17px;
+        padding: 15px 17px;
     }
 
 
@@ -595,7 +609,7 @@ footer ul{
     }
     
     .activites-cards .card-content{
-        padding: 2px 0 6px 0;
+        min-height: 59px;
     }
 
     .activites-cards img{
@@ -614,7 +628,7 @@ footer ul{
     
     footer ul{
         padding: 30px;
-        width: 100%;
+        width: auto;
     }
     
 }
